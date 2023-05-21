@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar with Search Box</title>
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="script.js" />
+    <!-- Unicons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo"
+        ><img src="skins/logo.png" style="width: 75%; height: 30%"
+      /></a>
+
+      <div id="main">
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="home-1.html">Home</a></li>
+          <button class="openbtn" onclick="openNav()">Men</button>
+          <button class="openbtn" onclick="openNav()">Women</button>
+          <button class="openbtn" onclick="openNav()">Kids</button>
+        </ul>
+
+        <div id="mySidebar" class="sidebar" style="width: 100%">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >×</a
+          >
+          <a href="#">New Arrival</a>
+          <a href="#">Sharee</a>
+          <a href="#">Kameez</a>
+          <a href="#">Shoes</a>
+        </div>
+      </div>
+
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </nav>
+
+    <!-- Photo Grid -->
+    <div class="row">
+      <div class="column">
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="view-new.html">View</a>
+        </div>
+        <div class="button-1">
+          <a href="tryon.html"
+            ><button class="tryon" type="button">Try ON</button></a
+          >
+        </div>
+
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+      </div>
+      <div class="column">
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+      </div>
+      <div class="column">
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+        <img src="skins/Group 143.png" style="width: 100%" />
+        <div class="text-1">
+          <div class="txt">Light sea Green sharee</div>
+          <a href="#view">View</a>
+        </div>
+        <div class="button-1">
+          <button class="tryon" type="button">Try ON</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+  </body>
+</html>
